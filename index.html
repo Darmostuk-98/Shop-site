@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <title>SHOP</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#"> <img src="images/logo.png" alt="image_logo" /> </a>
+        </div>
+        <nav class="navbar">
+          <a href="#">Home </a>
+          <div class="dropdown">
+            <a href="#">Products &downarrow;</a>
+            <div class="dropdown_list">
+              <a href="#">Lorem ipsum dolor</a>
+              <a href="#">Sit amet</a>
+              <a href="#">Consectetur adipisicing</a>
+              <a href="#">Dolore magna aliqua</a>
+              <a href="#">Ut enim ad minim veniam</a>
+              <a href="#">Quis nostrud</a>
+            </div>
+          </div>
+          <a href="#">Payment</a>
+          <a href="#">Shipping</a>
+        </nav>
+        <div class="search-card">
+          <div class="input">
+            <input type="text" name="search" placeholder="Search" />
+            <img src="images/search.png" alt="#" />
+          </div>
+          <div class="btn_cart">
+            <img src="images/cart.png" alt="cart" />
+            <div class="cart-items" id="product-count">0</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="slider">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+        <div class="slider-content">slide 3</div>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+    </section>
+    <div class="main-page">
+      <section class="sidebar">
+        <div class="sidebar_filter1">
+          <div class="sidebar_filter_title">Device Type</div>
+          <div class="sidebar-filter-item">
+            <div class="checkbox">
+              <input
+                id="device1"
+                type="checkbox"
+                class="checkbox_input"
+                checked
+              />
+              <label for="device1" class="checkbox_label">Laptop</label>
+            </div>
+            <div class="checkbox">
+              <input id="device2" type="checkbox" class="checkbox_input" />
+              <label for="device2" class="checkbox_label">Tablet</label>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar_filter2">
+          <div class="sidebar_filter_title">Color</div>
+          <div class="checkbox">
+            <input id="Color1" type="checkbox" class="checkbox_input" />
+            <label for="Color1" class="checkbox_label">Black</label>
+          </div>
+          <div class="checkbox">
+            <input id="Color2" type="checkbox" class="checkbox_input" />
+            <label for="Color2" class="checkbox_label">Red</label>
+          </div>
+          <div class="checkbox">
+            <input id="Color3" type="checkbox" class="checkbox_input" checked />
+            <label for="Color3" class="checkbox_label">Green</label>
+          </div>
+          <div class="checkbox">
+            <input id="Color4" type="checkbox" class="checkbox_input" />
+            <label for="Color4" class="checkbox_label">Blue</label>
+          </div>
+          <div class="checkbox">
+            <input id="Color5" type="checkbox" class="checkbox_input" />
+            <label for="Color5" class="checkbox_label">Orange</label>
+          </div>
+        </div>
+        <div class="sidebar_filter2">
+          <div class="sidebar_filter_title">RAM</div>
+          <div class="checkbox">
+            <input id="Color1" type="checkbox" class="checkbox_input" />
+            <label for="Color1" class="checkbox_label">1GB</label>
+          </div>
+          <div class="checkbox">
+            <input id="Color2" type="checkbox" class="checkbox_input" />
+            <label for="Color2" class="checkbox_label">2GB</label>
+          </div>
+          <div class="checkbox">
+            <input id="Color3" type="checkbox" class="checkbox_input" checked />
+            <label for="Color3" class="checkbox_label">4GB</label>
+          </div>
+          <div class="checkbox">
+            <input id="Color4" type="checkbox" class="checkbox_input" />
+            <label for="Color4" class="checkbox_label">6GB</label>
+          </div>
+          <div class="checkbox">
+            <input id="Color5" type="checkbox" class="checkbox_input" />
+            <label for="Color5" class="checkbox_label">8GB</label>
+          </div>
+        </div>
+        <p><a href="#">Show more options ...</a></p>
+        <div class="button" type="submit">submit</div>
+      </section>
+      <div class="main-items">
+        <div class="main-items-header">
+          <div class="main-items-filter">
+            Home page > Products > Laptops and Tablets
+          </div>
+          <div class="main-items-title_sort">
+            <div class="items-header-title">Laptops and Tablets</div>
+            <div class="items-header-sort">
+              <div class="sort-dropdown">
+                <a href="#">Sort by price &DownArrow;</a>
+                <div class="sort_dropdown-list">
+                  <a href="#">sort by name</a>
+                  <a href="#">sort by date</a>
+                  <a href="#">sort by popularity</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-items_container">
+          <div class="main_item">
+            <div class="main_item-icons">
+              <img src="icons/zoom2.png" alt="" />
+              <img src="icons/favorite.png" alt="" />
+            </div>
+            <div class="main_item-image">
+              <img src="icons/desktop.png" alt="#" />
+            </div>
+            <div class="main_item-body">
+              <div class="main_item-title">#1 Device Name</div>
+              <div class="main_item_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
+              <div class="main_item_type">TYPE: Laptop</div>
+              <div class="main_item_size">Screen size: 7 inches</div>
+              <div class="main_item_ram">RAM: 1GB</div>
+              <div class="main_item_price">$599 <sup>25</sup></div>
+              <div class="btn1">More Details</div>
+              <div class="button-cart">
+                <div class="btn2">
+                  Add to cart <img src="icons/cart.png" alt="#" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_item">
+            <div class="main_item-icons">
+              <img src="icons/zoom2.png" alt="" />
+              <img src="icons/favorite.png" alt="" />
+            </div>
+            <div class="main_item-image">
+              <img src="icons/tv.png" alt="#" />
+            </div>
+            <div class="main_item-body">
+              <div class="main_item-title">#1 Device Name</div>
+              <div class="main_item_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
+              <div class="main_item_type">TYPE: Laptop</div>
+              <div class="main_item_size">Screen size: 7 inches</div>
+              <div class="main_item_ram">RAM: 1GB</div>
+              <div class="main_item_price">$599 <sup>25</sup></div>
+              <div class="btn1">More Details</div>
+              <div class="button-cart">
+                <div class="btn2">
+                  Add to cart <img src="icons/cart.png" alt="#" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_item">
+            <div class="main_item-icons">
+              <img src="icons/zoom2.png" alt="" />
+              <img src="icons/favorite.png" alt="" />
+            </div>
+            <div class="main_item-image">
+              <img src="icons/whatch.png" alt="#" />
+            </div>
+            <div class="main_item-body">
+              <div class="main_item-title">#1 Device Name</div>
+              <div class="main_item_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
+              <div class="main_item_type">TYPE: Laptop</div>
+              <div class="main_item_size">Screen size: 7 inches</div>
+              <div class="main_item_ram">RAM: 1GB</div>
+              <div class="main_item_price">$599 <sup>25</sup></div>
+              <div class="btn1">More Details</div>
+              <div class="button-cart">
+                <div class="btn2">
+                  Add to cart <img src="icons/cart.png" alt="#" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_item">
+            <div class="main_item-icons">
+              <img src="icons/zoom2.png" alt="" />
+              <img src="icons/favorite.png" alt="" />
+            </div>
+            <div class="main_item-image">
+              <img src="icons/laptop.png" alt="#" />
+            </div>
+            <div class="main_item-body">
+              <div class="main_item-title">#1 Device Name</div>
+              <div class="main_item_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
+              <div class="main_item_type">TYPE: Laptop</div>
+              <div class="main_item_size">Screen size: 7 inches</div>
+              <div class="main_item_ram">RAM: 1GB</div>
+              <div class="main_item_price">$599 <sup>25</sup></div>
+              <div class="btn1">More Details</div>
+              <div class="button-cart">
+                <div class="btn2">
+                  Add to cart <img src="icons/cart.png" alt="#" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_item">
+            <div class="main_item-icons">
+              <img src="icons/zoom2.png" alt="" />
+              <img src="icons/favorite.png" alt="" />
+            </div>
+            <div class="main_item-image">
+              <img src="icons/ipod.png" alt="#" />
+            </div>
+            <div class="main_item-body">
+              <div class="main_item-title">#1 Device Name</div>
+              <div class="main_item_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
+              <div class="main_item_type">TYPE: Laptop</div>
+              <div class="main_item_size">Screen size: 7 inches</div>
+              <div class="main_item_ram">RAM: 1GB</div>
+              <div class="main_item_price">$599 <sup>25</sup></div>
+              <div class="btn1">More Details</div>
+              <div class="button-cart">
+                <div class="btn2">
+                  Add to cart <img src="icons/cart.png" alt="#" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_item">
+            <div class="main_item-icons">
+              <img src="icons/zoom2.png" alt="" />
+              <img src="icons/favorite.png" alt="" />
+            </div>
+            <div class="main_item-image">
+              <img src="icons/phone.png" alt="#" />
+            </div>
+            <div class="main_item-body">
+              <div class="main_item-title">#1 Device Name</div>
+              <div class="main_item_text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </div>
+              <div class="main_item_type">TYPE: Laptop</div>
+              <div class="main_item_size">Screen size: 7 inches</div>
+              <div class="main_item_ram">RAM: 1GB</div>
+              <div class="main_item_price">$599 <sup>25</sup></div>
+              <div class="btn1">More Details</div>
+              <div class="button-cart">
+                <div class="btn2">
+                  Add to cart <img src="icons/cart.png" alt="#" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="load_btn">
+            <a href="#">Load more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_text">© Copyright 2017</div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
