@@ -16,6 +16,33 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.main_item-icons img {
+  width: 32px;
+  height: 32px;
+}
+
+#like-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#like-toggle.active::after {
+  content: url(./icons/like-active.png);
+  display: block;
+  padding: 5px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: red;
+}
+
+/* -------------------------------------- */
+
 .container {
   max-width: 1200px;
   padding: 25px;

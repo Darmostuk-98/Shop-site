@@ -8,3 +8,7 @@ for (let i = 0; i < addToCartButton.length; i++) {
     productsCountEl.innerHTML++;
   });
 }
+
+function likeToggle() {
+  document.getElementById("like-toggle").classList.toggle("active");
+}

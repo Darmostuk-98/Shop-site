@@ -144,7 +144,12 @@
           <div class="main_item">
             <div class="main_item-icons">
               <img src="icons/zoom2.png" alt="" />
-              <img src="icons/favorite.png" alt="" />
+
+              <div class="like">
+                <div id="like-toggle" onclick="likeToggle()">
+                  <img src="icons/like-blue.png" alt="#" />
+                </div>
+              </div>
             </div>
             <div class="main_item-image">
               <img src="icons/desktop.png" alt="#" />
@@ -169,7 +174,7 @@
           <div class="main_item">
             <div class="main_item-icons">
               <img src="icons/zoom2.png" alt="" />
-              <img src="icons/favorite.png" alt="" />
+              <img src="icons/favorite.png" alt="" onclick="toggleLike" />
             </div>
             <div class="main_item-image">
               <img src="icons/tv.png" alt="#" />
