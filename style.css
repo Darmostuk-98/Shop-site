@@ -16,30 +16,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.main_item-icons img {
-  width: 32px;
-  height: 32px;
-}
-
-#like-toggle {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#like-toggle.active::after {
-  content: url(./icons/like-active.png);
-  display: block;
-  padding: 5px;
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  background-color: red;
-}
 
 /* -------------------------------------- */
 
@@ -201,6 +177,7 @@ body {
 }
 
 .slider {
+  visibility: hidden;
   width: 1200px;
   margin: 0 auto;
   text-transform: uppercase;
@@ -432,6 +409,7 @@ body {
   position: absolute;
   top: 15px;
   right: 15px;
+  padding-bottom: 20px;
 }
 
 .main_item-icons img {
@@ -440,11 +418,37 @@ body {
   justify-content: center;
   border: 1px solid #2c71b8;
   padding: 5px;
-  margin-bottom: 20px;
 }
 .main_item-icons img:hover {
   background-color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
+}
+
+.item-icon {
+  margin-bottom: 20px;
+}
+.main_item-icons img {
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+#like-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#like-toggle.active::after {
+  content: url(./icons/like-active.png);
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
 }
 
 .main_item-body {
